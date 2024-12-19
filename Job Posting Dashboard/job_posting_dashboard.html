@@ -11,6 +11,7 @@
         <h1>Job Posting Dashboard</h1>
     </header>
     <main>
+        <input class="filter-input" type="text" placeholder="Search by title or status...">
         <h2>Active Job Postings</h2>
         <table>
             <thead>
@@ -30,19 +31,64 @@
                     <td></td>
                     <td>Open</td>
                     <td></td>
-                    <td><button class="button">View Details</button></td>
+                    <td>
+                        <button class="button view-applications" id="viewApplications">View Application</button>
+                        <button class="button edit-job" id="editJob">Edit Job</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Product Manager</td>
                     <td>8</td>
                     <td></td>
-                    <td>Open</td>
+                    <td>Closed</td>
                     <td></td>
-                    <td><button class="button">View Details</button></td>
+                    <td>
+                        <button class="button view-applications" id="viewApplications">View Application</button>
+                        <button class="button edit-job">Edit Job</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
-        <button class="button">Add New Job</button>
+        <!-- Modal for View Applications -->
+         <div id="viewApplicationsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Applications for Software Engineer</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Applicant Name</th>
+                            <th>Application Date</th>
+                            <th>Resume</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>12/12/2020</td>
+                            <td><a href="#">View Resume</a></td>
+                            <td>Under Review</td>
+                            <td>
+                                <button class="button withdraw-application">Withdraw Application</button>
+                                <button class="button contact-applicant">Send Message to Applicant</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>12/12/2020</td>
+                            <td><a href="#">View Resume</a></td>
+                            <td>Received</td>
+                            <td>
+                                <button class="button withdraw-application">Withdraw Application</button>
+                                <button class="button contact-applicant">Send Message to Applicant</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
     </main>
+    <button class="button">Add New Job</button>
 </body>
 </html>
