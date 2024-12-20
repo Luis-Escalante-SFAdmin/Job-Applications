@@ -28,28 +28,30 @@
                 <tr>
                     <td>Software Engineer</td>
                     <td>12</td>
-                    <td></td>
+                    <td>4</td>
                     <td>Open</td>
-                    <td></td>
                     <td>
-                        <button class="button view-applications" data-job-id="1">View Application</button>
+                        <button class="button view-applications" data-job-id="1">View Applications</button>
+                    </td>
+                    <td>
                         <button class="button edit-job" id="editJob">Edit Job</button>
                     </td>
                 </tr>
                 <tr>
                     <td>Product Manager</td>
                     <td>8</td>
-                    <td></td>
+                    <td>2</td>
                     <td>Closed</td>
-                    <td></td>
                     <td>
-                        <button class="button view-applications" data-job-id="2">View Application</button>
+                        <button class="button view-applications" data-job-id="2">View Applications</button>
+                    </td>
+                    <td>
                         <button class="button edit-job">Edit Job</button>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <!-- Modal for View Applications -->
+        <!-- Modal for View Applications for Software Engineer job -->
          <div id="viewApplicationsModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -68,28 +70,29 @@
                         <tr>
                             <td>John Doe</td>
                             <td>12/12/2020</td>
-                            <td><a href="#">View Resume</a></td>
+                            <td><a href="https://luis-escalante-sfadmin.github.io/portfolio/resume.html" target="_blank">View Resume</a></td>
                             <td>Under Review</td>
                             <td>
-                                <button class="button withdraw-application">Withdraw Application</button>
+                                <button class="button withdraw-application" style="margin-bottom: 10px;">Withdraw Application</button>
                                 <button class="button contact-applicant">Send Message to Applicant</button>
                             </td>
                         </tr>
                         <tr>
                             <td>Jane Doe</td>
                             <td>12/12/2020</td>
-                            <td><a href="#">View Resume</a></td>
+                            <td><a href="https://luis-escalante-sfadmin.github.io/portfolio/resume.html" target="_blank">View Resume</a></td>
                             <td>Received</td>
                             <td>
-                                <button class="button withdraw-application">Withdraw Application</button>
+                                <button class="button withdraw-application" style="margin-bottom: 10px;">Withdraw Application</button>
                                 <button class="button contact-applicant">Send Message to Applicant</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+         </div>
     </main>
-    <button class="button">Add New Job</button>
+    <button class="button" id="addNewJob">Add New Job</button>
     <script src="job_posting_dashboard.js"></script>
 </body>
 </html>
